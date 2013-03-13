@@ -12,7 +12,9 @@ gem 'tzinfo',         '~> 0.3.32'
 
 gem 'dm-rails',               '~> 1.2.1'
 gem 'dm-sqlite-adapter', DM_VERSION
+gem 'execjs'
 
+gem 'therubyracer'
 # You can use any of the other available database adapters.
 # This is only a small excerpt of the list of all available adapters
 # Have a look at
