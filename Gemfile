@@ -11,7 +11,7 @@ gem 'railties',       RAILS_VERSION, :require => 'rails'
 gem 'tzinfo',         '~> 0.3.32'
 
 gem 'dm-rails',               '~> 1.2.1'
-gem 'dm-sqlite-adapter', DM_VERSION
+# gem 'dm-sqlite-adapter', DM_VERSION
 gem 'execjs'
 
 gem 'therubyracer'
@@ -25,11 +25,11 @@ gem 'therubyracer'
 # for a rather complete list of available datamapper adapters and plugins
 
 # gem 'dm-sqlite-adapter',    DM_VERSION
-# gem 'dm-mysql-adapter',     DM_VERSION
 # gem 'dm-postgres-adapter',  DM_VERSION
 # gem 'dm-oracle-adapter',    DM_VERSION
 # gem 'dm-sqlserver-adapter', DM_VERSION
 
+gem 'dm-mysql-adapter',     DM_VERSION
 gem 'dm-migrations',   DM_VERSION
 gem 'dm-types',        DM_VERSION
 gem 'dm-validations',  DM_VERSION
@@ -42,8 +42,8 @@ gem 'dm-observer',     DM_VERSION
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.5'
-  gem 'coffee-rails', '~> 3.2.2'
+  # gem 'sass-rails',   '~> 3.2.5'
+  # gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier',     '~> 1.2.4'
 end
 
