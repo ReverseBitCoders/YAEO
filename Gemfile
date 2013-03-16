@@ -11,23 +11,8 @@ gem 'railties',       RAILS_VERSION, :require => 'rails'
 gem 'tzinfo',         '~> 0.3.32'
 
 gem 'dm-rails',               '~> 1.2.1'
-# gem 'dm-sqlite-adapter', DM_VERSION
 gem 'execjs'
-
 gem 'therubyracer'
-# You can use any of the other available database adapters.
-# This is only a small excerpt of the list of all available adapters
-# Have a look at
-#
-#  http://wiki.github.com/datamapper/dm-core/adapters
-#  http://wiki.github.com/datamapper/dm-core/community-plugins
-#
-# for a rather complete list of available datamapper adapters and plugins
-
-# gem 'dm-sqlite-adapter',    DM_VERSION
-# gem 'dm-postgres-adapter',  DM_VERSION
-# gem 'dm-oracle-adapter',    DM_VERSION
-# gem 'dm-sqlserver-adapter', DM_VERSION
 
 gem 'dm-mysql-adapter',     DM_VERSION
 gem 'dm-migrations',   DM_VERSION
@@ -42,26 +27,14 @@ gem 'dm-observer',     DM_VERSION
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  # gem 'sass-rails',   '~> 3.2.5'
-  # gem 'coffee-rails', '~> 3.2.2'
   gem 'uglifier',     '~> 1.2.4'
+  gem 'haml-rails'
 end
 
 gem 'jquery-rails', '~> 2.0.1'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.1'
-
-# Use unicorn as the web server
-# gem 'unicorn', '~> 4.2.1'
-
-# Deploy with Capistrano
-# gem 'capistrano', '~> 2.11.2'
-
-# To use debugger
-# gem 'ruby-debug19', '~> 0.11.6', :require => 'ruby-debug'
-
+group :development do
+  gem 'debugger'
+end
 group :test do
-  # Pretty printed test output
   gem 'turn', '~> 0.9.4', :require => false
 end
