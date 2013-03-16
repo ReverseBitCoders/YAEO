@@ -5,11 +5,11 @@ defaults: &defaults
   host: localhost
 
 development:
-  database: yaeo_development.db
+  database: yaeo_development
   <<: *defaults
 test:
-  database: yaeo_test.db
+  database: yaeo_test
   <<: *defaults
 production:
-  database: yaeo_production.db
+  database: yaeo_production
   <<: *defaults
