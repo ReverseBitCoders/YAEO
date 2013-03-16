@@ -1,0 +1,6 @@
+.right_pane{
+    float:right;
+    max-width: 15%;
+    min-width: 15%;
+    background-color: blue;
+}

@@ -1,0 +1,6 @@
+.center_pane{
+    float: left;
+    min-width: 70%;
+    max-width: 70%;
+    background-color: yellow;
+}
