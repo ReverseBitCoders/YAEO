@@ -10,8 +10,8 @@ gem 'activeresource', RAILS_VERSION, :require => 'active_resource'
 gem 'railties',       RAILS_VERSION, :require => 'rails'
 gem 'tzinfo',         '~> 0.3.32'
 gem 'dm-rails',               '~> 1.2.1'
-g
-em 'execjs'
+
+gem 'execjs'
 gem 'therubyracer'
 gem 'thin'
 
