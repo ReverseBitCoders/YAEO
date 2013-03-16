@@ -1,7 +1,7 @@
 .top_header{
     background-color: red;
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 110px;
+    max-height: 110px;
 }
 h1#top_title_header{
     display:inline;
@@ -9,7 +9,6 @@ h1#top_title_header{
 }
 ul#top_header_menu{
     margin: 0px;
-    padding-top: 30px;
 }
 
 li{
