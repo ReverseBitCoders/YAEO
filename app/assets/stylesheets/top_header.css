@@ -3,3 +3,6 @@
     min-height: 150px;
     max-height: 150px;
 }
+h1#top_title_header{
+    display:inline;
+}
