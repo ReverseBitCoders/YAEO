@@ -7,3 +7,11 @@ h1#top_title_header{
     display:inline;
     padding-left: 15%;
 }
+ul#top_header_menu{
+    margin: 0px;
+    padding-top: 30px;
+}
+
+li{
+    display: inline;
+}
