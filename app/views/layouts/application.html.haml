@@ -7,4 +7,9 @@
       = 'Yet another event organizer'
     = csrf_meta_tags
   %body
-    = yield
+    .left_pane
+      = render :partial => 'events/left_pane'
+    .center_pane
+      = yield
+    .right_pane
+      = render :partial => 'events/right_pane'
