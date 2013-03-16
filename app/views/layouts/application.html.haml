@@ -1,9 +1,10 @@
 !!!
 %html{:style => 'background-color: black; color: white;'}
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
   %head
-    %title Yaeo
-    = stylesheet_link_tag    "application", :media => "all"
-    = javascript_include_tag "application"
+    %title
+      = 'Yet another event organizer'
     = csrf_meta_tags
   %body
     = yield
