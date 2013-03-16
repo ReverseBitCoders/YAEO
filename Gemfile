@@ -9,10 +9,11 @@ gem 'actionmailer',   RAILS_VERSION, :require => 'action_mailer'
 gem 'activeresource', RAILS_VERSION, :require => 'active_resource'
 gem 'railties',       RAILS_VERSION, :require => 'rails'
 gem 'tzinfo',         '~> 0.3.32'
-
 gem 'dm-rails',               '~> 1.2.1'
+
 gem 'execjs'
 gem 'therubyracer'
+gem 'thin'
 
 gem 'dm-mysql-adapter',     DM_VERSION
 gem 'dm-migrations',   DM_VERSION
