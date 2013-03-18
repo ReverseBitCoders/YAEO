@@ -1,4 +1,8 @@
 !!!
+= stylesheet_link_tag :top_header
+= stylesheet_link_tag :left_pane
+= stylesheet_link_tag :right_pane
+= stylesheet_link_tag :events
 %html{:style => 'background-color: black; color: white;'}
   = stylesheet_link_tag    "application", :media => "all"
   = javascript_include_tag "application"
@@ -7,12 +11,8 @@
       = 'Yet another event organizer'
     = csrf_meta_tags
   %body
-    = stylesheet_link_tag :top_header
     .top_header
       = render :partial => 'events/top_header'
-    = stylesheet_link_tag :left_pane
-    = stylesheet_link_tag :right_pane
-    = stylesheet_link_tag :events
     .left_pane
       = render :partial => 'events/left_pane'
     .center_pane
