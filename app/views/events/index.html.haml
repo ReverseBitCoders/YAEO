@@ -1,1 +1,15 @@
-YAEO
+- @events.each do |event|
+  .event_list_div
+    %dl
+      %dt
+        = 'Event name'
+      %dd
+        = event.name
+      %dt
+        = 'Event description'
+      %dd
+        = event.description
+      %dt
+        = 'Event timings'
+      %dd
+        = event.date_time.strftime("%d-%m-%Y %T")

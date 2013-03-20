@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+[
+ {:name => 'Clojure meetup', :description => 'All clojure geeks unite ! ', :date_time => DateTime.now},
+ {:name => 'JUG', :description => 'Java users meetup group. Meets every thursday and do boring stuff ', :date_time => DateTime.now},
+ {:name => 'Pune linux users group', :description => 'Prestigious community of pune linux users meet up and contri and eat bhel puri ', :date_time => DateTime.now},
+ {:name => 'Muneeb ki shaadi', :description => 'Muneeb bhai says: kabul hai, kabul hai, kabul hai ! ', :date_time => DateTime.now}
+].each do |event|
+  Event.create(event)
+end
