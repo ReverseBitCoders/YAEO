@@ -9,10 +9,6 @@
     padding: 20px;
     background-color: purple;
 }
-.event_description{
-    
-}
-dl{
-    max-width: 50%;
-    background-color: yellow;
+table.event_table{
+    width: 100%
 }
