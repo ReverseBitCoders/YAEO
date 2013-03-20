@@ -9,3 +9,8 @@
         = 'When?'
       %dd
         = event.date_time.strftime("%d-%m-%Y %T")
+      = link_to 'view event', event_path(event)
+      |
+      = link_to 'share on facebook'
+      |
+      = link_to 'tweet this event'
