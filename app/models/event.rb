@@ -7,4 +7,5 @@ class Event
   property :description, Text, :required => false
   property :date_time, DateTime, :required => false
 
+  # has n, :address
 end

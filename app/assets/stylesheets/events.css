@@ -5,10 +5,16 @@
     background-color: brown;
 }
 .event_list_div{
-    margin: 20px;
+    width: 100%;
     padding: 20px;
-    background-color: purple;
+    margin: 20px;
 }
-table.event_table{
-    width: 100%
+
+.event_info_box{
+    width: 60%;
+    float: left;
+}
+.event_image_box{
+    width: 20%
+    float: right;
 }
