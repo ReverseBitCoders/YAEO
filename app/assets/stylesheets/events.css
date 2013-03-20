@@ -5,17 +5,15 @@
     background-color: brown;
 }
 .event_list_div{
-    width: 100%;
     padding: 20px;
     margin: 20px;
+    overflow: auto;
+    background-color: purple;
 }
 
 .event_info_box{
-    width: 60%;
     float: left;
-    margin-bottom: 30px;
 }
 .event_image_box{
     float: right;
-    margin-right: 50px;
 }
