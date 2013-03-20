@@ -1,16 +1,20 @@
 - @events.each do |event|
   .event_list_div
-    %dl
-      %dt
-        = event.name
-      %dd
-        = event.description
-      %dt
-        = 'When?'
-      %dd
-        = event.date_time.strftime("%d-%m-%Y %T")
-      = link_to 'view event', event_path(event)
-      |
-      = link_to 'share on facebook'
-      |
-      = link_to 'tweet this event'
+    .event_description
+      %dl
+        %dt
+          = event.name
+        %dd
+          = event.description
+        %dt
+          = 'When?'
+        %dd
+          = event.date_time.strftime("%d-%m-%Y %T")
+        = link_to 'view event', event_path(event)
+        |
+        = link_to 'share on facebook'
+        |
+        = link_to 'tweet this event'
+    .event_image
+      = image_tag('rails.png')
+
