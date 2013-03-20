@@ -1,5 +1,14 @@
 %p#notice= notice
-
+%br
+= @event.name
+%br
+%br
+= @event.description
+%br
+%br
+= @event.date_time.strftime("%d %m %Y %T")
+%br
+%br
 
 = link_to 'Edit', edit_event_path(@event)
 \|

@@ -3,3 +3,7 @@
     min-height: 120px;
     max-height: 120px;
 }
+#top_header_heading{
+    text-decoration: none;
+    color: white;
+}
