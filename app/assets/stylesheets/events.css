@@ -13,8 +13,9 @@
 .event_info_box{
     width: 60%;
     float: left;
+    margin-bottom: 30px;
 }
 .event_image_box{
-    width: 20%
     float: right;
+    margin-right: 50px;
 }
