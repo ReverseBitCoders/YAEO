@@ -39,3 +39,10 @@ end
 group :test do
   gem 'turn', '~> 0.9.4', :require => false
 end
+
+# for devise
+gem 'dm-core',           '~> 1.2.0'
+gem 'dm-serializer',     '~> 1.2.0'
+gem 'dm-timestamps',     '~> 1.2.0'
+gem 'dm-validations',    '~> 1.2.0' # Do not include if using data_mapper_active_model
+gem 'dm-devise',         '~> 2.1.0'
