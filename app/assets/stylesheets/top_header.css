@@ -1,9 +1,15 @@
 .top_header{
     background-color: red;
-    min-height: 120px;
-    max-height: 120px;
+    min-height: 110px;
+    max-height: 110px;
 }
-#top_header_heading{
-    text-decoration: none;
-    color: white;
+h1#top_title_header{
+    display:inline;
+    padding-left: 15%;
+}
+ul#top_header_menu{
+    margin: 0px;
+}
+li{
+    display: inline;
 }
