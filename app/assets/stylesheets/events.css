@@ -1,4 +1,4 @@
-h2{
+h2, p{
     margin:0px;
 }
 .center_pane{
@@ -19,4 +19,7 @@ h2{
 }
 .event_image_box{
     float: right;
+}
+.user_session_nav{
+    float:right;
 }
