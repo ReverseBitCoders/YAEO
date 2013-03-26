@@ -27,6 +27,7 @@ GEM
     ansi (1.4.3)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
+    cancan (1.6.9)
     columnize (0.3.6)
     daemons (1.1.9)
     data_objects (0.10.12)
@@ -178,6 +179,7 @@ DEPENDENCIES
   actionpack (~> 3.2.12)
   activeresource (~> 3.2.12)
   activesupport (~> 3.2.12)
+  cancan
   debugger
   dm-aggregates (~> 1.2.0)
   dm-constraints (~> 1.2.0)

@@ -46,3 +46,6 @@ gem 'dm-serializer',     '~> 1.2.0'
 gem 'dm-timestamps',     '~> 1.2.0'
 gem 'dm-validations',    '~> 1.2.0' # Do not include if using data_mapper_active_model
 gem 'dm-devise',         '~> 2.1.0'
+
+# for abilities
+gem "cancan"
