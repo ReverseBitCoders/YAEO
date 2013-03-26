@@ -10,7 +10,6 @@ class Event
   property :date_time, DateTime, :required => false
 
   # fields not visible to user and set from backend
-  property :created_by_user_id, Integer, :required => true, :index => true
   property :created_at, DateTime, :default => DateTime.now.utc, :required => true
 
   belongs_to :user
