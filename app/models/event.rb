@@ -13,7 +13,7 @@ class Event
   property :created_by_user_id, Integer, :required => true, :index => true
   property :created_at, DateTime, :default => DateTime.now.utc, :required => true
 
-  belongs_to :created_by, :model => 'User', :child_key => [:created_by_user_id], :required => true
+  belongs_to :user
 
 
   def build_date_time
