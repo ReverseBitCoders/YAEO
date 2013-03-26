@@ -28,7 +28,6 @@ class User
 
 
   # property to determine role of current logged in user
-  property :role,               Enum[*ROLES], :default => :user
 
   ## Encryptable
   # property :password_salt, String
@@ -51,6 +50,7 @@ class User
   # property :invitation_token, String, :length => 255
 
   property :id, Serial
+  property :role,               Enum[*ROLES], :default => :user
 
   # user ability method to check role
     def role?(role_name)
