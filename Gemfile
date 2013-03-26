@@ -49,3 +49,4 @@ gem 'dm-devise',         '~> 2.1.0'
 
 # for abilities
 gem "cancan"
+gem 'pry-rails'
