@@ -7,7 +7,8 @@ class Ability
     if user.role? :superadmin
       can :manage, :all
     elsif user.role? :user
-      can :read, :all
+      can :read, [Event]
+      can :create, [Event]
     end
   end
 end
