@@ -1,4 +1,5 @@
 class User
+  ROLES = [:superadmin, :user]
 
   include DataMapper::Resource
   # Include default devise modules. Others available are:
@@ -25,6 +26,10 @@ class User
   property :current_sign_in_ip, String
   property :last_sign_in_ip,    String
 
+
+  # property to determine role of current logged in user
+  property :role,               Enum[*ROLES], :default => :user
+
   ## Encryptable
   # property :password_salt, String
 
@@ -47,5 +52,13 @@ class User
 
   property :id, Serial
 
+  # user ability method to check role
+    def role?(role_name)
+    if self.role == role_name
+      return true
+    else
+      return false
+    end
+  end
 
 end
