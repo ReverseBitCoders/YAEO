@@ -19,9 +19,9 @@ class Event
     self.date_time = "#{date} #{time}".to_datetime
   end
   def date
-    @date if not @date.nil? and not @date.blank?
+    @date.nil? ? Date.today : @date
   end
   def time
-    @time if not @date.nil? and not @date.blank?
+    @time.nil? ? Time.now.utc : @time
   end
 end
