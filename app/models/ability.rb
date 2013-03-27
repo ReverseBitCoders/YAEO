@@ -9,6 +9,7 @@ class Ability
     elsif user.role? :user
       can :read, [Event]
       can :create, [Event]
+      can :update, Event, :user_id => user.id
     end
   end
 end
