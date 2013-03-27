@@ -1,11 +1,11 @@
+- if user_signed_in?
+  = link_to 'Add your own event', new_event_path
 - @events.each do |event|
   .event_list_div
     .event_info_box
-      = event.name.humanize
+      = link_to event.name.humanize, event_path(event)
       %p
         = event.description
-      = link_to 'view event', event_path(event)
-      |
       = link_to 'share on facebook'
       |
       = link_to 'tweet this event'

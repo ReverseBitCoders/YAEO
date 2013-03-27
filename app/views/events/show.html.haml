@@ -6,7 +6,8 @@
 = @event.description
 %br
 %br
-= @event.date_time.strftime("%d %m %Y %T")
+- if not @event.date_time.nil?
+  = @event.date_time.strftime("%d %m %Y %T")
 %br
 %br
 

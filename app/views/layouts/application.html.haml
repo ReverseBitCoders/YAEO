@@ -5,7 +5,9 @@
 = stylesheet_link_tag :events
 = stylesheet_link_tag :normalize
 = stylesheet_link_tag    "application", :media => "all"
+= stylesheet_link_tag "jquery-ui"
 = javascript_include_tag "application"
+= javascript_include_tag "jquery-ui-timepicker"
 %html{:style => 'background-color: black; color: white;'}
   = csrf_meta_tags
   %head
