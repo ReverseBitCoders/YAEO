@@ -36,3 +36,12 @@ h2, p{
 .event_list_image{
     height: 8em;
 }
+#event_description{
+    height: 100px;
+}
+input#event_date, input#event_time{
+    width: 186px;
+}
+input#event_name, textarea#event_description{
+    width: 377px;
+}

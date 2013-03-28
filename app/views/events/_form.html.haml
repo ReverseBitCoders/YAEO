@@ -6,12 +6,23 @@
         %ul
           - @event.errors.full_messages.each do |msg|
             %li= msg
-    .fields
-      = f.text_field :name
-    .fields
-      = f.text_area :description
-    .fields
-      = f.text_field :date
-      = f.text_field :time
+    %table{:cellpadding => '10'}
+      %tr
+        %td{:align => 'right'}
+          = f.label :name
+        %td
+          = f.text_field :name
+      %tr
+        %td{:align => 'right'}
+          = f.label :description
+        %td
+          = f.text_area :description
+      %tr
+        %td{:align => 'right'}
+          = f.label :date
+        %td
+          = f.text_field :date, :value => '', :readonly => true
+          = f.text_field :time, :value => '', :readonly => true
     .actions
       = f.submit 'Save'
+ 
