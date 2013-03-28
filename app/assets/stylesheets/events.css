@@ -5,13 +5,13 @@ h2, p{
     float: left;
     min-width: 60%;
     max-width: 60%;
-    background-color: brown;
+    background-color: grey;
 }
 .event_list_div{
     padding: 20px;
     margin: 20px;
     overflow: auto;
-    background-color: black;
+    background-color: pink;
 }
 
 .event_info_box{
