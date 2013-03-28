@@ -5,6 +5,7 @@
 #top_header_heading{
     text-decoration: none;
     color: white;
+    padding-left: 5%;
 }
 
 .top_header_1{
@@ -17,4 +18,15 @@
     color: black;
     margin-left: 5%;
     width: 90%;
+}
+
+.user_session_links{
+    background-color: #00a2a5;
+    font-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.user_session_links:hover{
+    background-color: #00BABD;
 }
