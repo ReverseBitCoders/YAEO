@@ -2,10 +2,10 @@
   - if user_signed_in?
     = "Signed in as #{current_user.email}. Not you?"
     %span.user_session_links
-      = link_to 'Sign out', destroy_user_session_path, :method => :delete
+      = link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => 'session_link_class'
   - else
     %span.user_session_links
-      = link_to 'Sign up! ', new_user_registration_path
+      = link_to 'Sign up! ', new_user_registration_path, :class => 'session_link_class'
     = 'Or'
     %span.user_session_links
-      = link_to 'Sign in', new_user_session_path
+      = link_to 'Sign in', new_user_session_path, :class => 'session_link_class'
