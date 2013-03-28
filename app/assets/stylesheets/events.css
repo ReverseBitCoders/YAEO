@@ -12,7 +12,7 @@ h2, p{
     padding: 20px;
     margin: 20px;
     overflow: auto;
-    border: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
     border-radius: 3px;
 }
 
