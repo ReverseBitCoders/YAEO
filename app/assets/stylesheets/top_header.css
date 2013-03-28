@@ -1,15 +1,37 @@
 .top_header{
-    background-color: red;
-    min-height: 110px;
-    max-height: 110px;
+    min-height: 200px;
+    max-height: 200px;
 }
-h1#top_title_header{
-    display:inline;
-    padding-left: 15%;
+#top_header_heading{
+    text-decoration: none;
+    padding-left: 5%;
+    color: white;
 }
-ul#top_header_menu{
-    margin: 0px;
+
+.top_header_1{
+    background-color: black;
+    min-height: 40px;
+    color: white;
+    padding-top: 5px;
 }
-li{
-    display: inline;
+.top_header_2{
+    min-height: 160px;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.user_session_links{
+    background-color: #00a2a5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.user_session_links:hover{
+    background-color: #00BABD;
+}
+.user_session_nav{
+    margin-right: 5%;
+}
+.session_link_class{
+color: white;
 }

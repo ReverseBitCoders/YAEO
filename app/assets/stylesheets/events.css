@@ -3,15 +3,17 @@ h2, p{
 }
 .center_pane{
     float: left;
-    min-width: 70%;
-    max-width: 70%;
-    background-color: brown;
+    min-width: 60%;
+    border: 3px solid  #EDEDED;
+    border-radius: 3px;
+    height: 100%;
 }
 .event_list_div{
     padding: 20px;
     margin: 20px;
     overflow: auto;
-    background-color: black;
+    border-bottom: 1px solid #EDEDED;
+    border-radius: 3px;
 }
 
 .event_info_box{
@@ -22,4 +24,24 @@ h2, p{
 }
 .user_session_nav{
     float:right;
+}
+.event_list_event_title{
+    font-size: 1.8em;
+    color: #687A8A;
+}
+.event_list_event_title:hover{
+    font-size: 2em;
+    color: #687A8A;
+}
+.event_list_image{
+    height: 8em;
+}
+#event_description{
+    height: 100px;
+}
+input#event_date, input#event_time{
+    width: 186px;
+}
+input#event_name, textarea#event_description{
+    width: 377px;
 }

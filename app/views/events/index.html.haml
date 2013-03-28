@@ -3,12 +3,14 @@
 - @events.each do |event|
   .event_list_div
     .event_info_box
-      = link_to event.name.humanize, event_path(event)
-      %p
+      = link_to event.name.humanize, event_path(event), :class => 'event_list_event_title'
+      %br
+      %br
         = event.description
+      %br
       = link_to 'share on facebook'
       |
       = link_to 'tweet this event'
     .event_image_box
-      = image_tag('rails.png')
+      = image_tag 'noimage.png', :class => 'event_list_image'
 

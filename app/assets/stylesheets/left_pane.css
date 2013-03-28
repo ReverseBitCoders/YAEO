@@ -1,6 +1,5 @@
 .left_pane{
     float: left;
-    max-width: 15%;
-    min-width: 15%;
-    background: green;
+    min-width: 5%;
+    height: 100%;
 }
