@@ -1,6 +1,5 @@
 .user_session_nav
   - if user_signed_in?
-    = "Signed in as #{current_user.email}. Not you?"
     %span.user_session_links
       = link_to 'Sign out', destroy_user_session_path, :method => :delete, :class => 'session_link_class'
   - else
