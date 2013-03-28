@@ -25,3 +25,14 @@ h2, p{
 .user_session_nav{
     float:right;
 }
+.event_list_event_title{
+    font-size: 1.8em;
+    color: #687A8A;
+}
+.event_list_event_title:hover{
+    font-size: 2em;
+    color: #687A8A;
+}
+.event_list_image{
+    height: 8em;
+}
