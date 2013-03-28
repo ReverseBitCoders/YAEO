@@ -4,8 +4,10 @@
   .event_list_div
     .event_info_box
       = link_to event.name.humanize, event_path(event), :class => 'event_list_event_title'
-      %p
+      %br
+      %br
         = event.description
+      %br
       = link_to 'share on facebook'
       |
       = link_to 'tweet this event'
