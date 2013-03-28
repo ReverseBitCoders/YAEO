@@ -4,13 +4,14 @@
 }
 #top_header_heading{
     text-decoration: none;
-    color: white;
     padding-left: 5%;
 }
 
 .top_header_1{
     background-color: black;
     min-height: 40px;
+    color: white;
+    padding-top: 5px;
 }
 .top_header_2{
     background-color: white;
@@ -22,11 +23,13 @@
 
 .user_session_links{
     background-color: #00a2a5;
-    font-color: white;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
 }
 .user_session_links:hover{
     background-color: #00BABD;
+}
+.user_session_nav{
+    margin-right: 5%;
 }
