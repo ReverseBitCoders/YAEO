@@ -4,14 +4,16 @@ h2, p{
 .center_pane{
     float: left;
     min-width: 60%;
-    background-color: grey;
+    border: 3px solid  #EDEDED;
+    border-radius: 3px;
     height: 100%;
 }
 .event_list_div{
     padding: 20px;
     margin: 20px;
     overflow: auto;
-    background-color: pink;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
 }
 
 .event_info_box{
