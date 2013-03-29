@@ -45,3 +45,6 @@ input#event_date, input#event_time{
 input#event_name, textarea#event_description{
     width: 377px;
 }
+div.ui-datepicker,div.ui-timepicker {
+ font-size:13px;
+}
