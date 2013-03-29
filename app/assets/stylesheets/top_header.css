@@ -25,6 +25,9 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    padding-top: 5px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
 }
 .user_session_links:hover{
     background-color: #00BABD;
