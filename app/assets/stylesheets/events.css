@@ -26,11 +26,11 @@ h2, p{
     float:right;
 }
 .event_list_event_title{
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #687A8A;
 }
 .event_list_event_title:hover{
-    font-size: 2em;
+    font-size: 1.8em;
     color: #687A8A;
 }
 .event_list_image{
