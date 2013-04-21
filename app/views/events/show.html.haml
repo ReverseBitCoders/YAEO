@@ -1,15 +1,18 @@
 %p#notice= notice
-%br
-= @event.name
-%br
-%br
-= @event.description
-%br
-%br
-- if not @event.date_time.nil?
-  = @event.date_time.strftime("%d %m %Y %T")
-%br
-%br
+.event_main_image
+  = image_tag('rails.png')
+.event_main_info_box
+  %br
+  = @event.name
+  %br
+  %br
+  = @event.description
+  %br
+  %br
+  - if not @event.date_time.nil?
+    = @event.date_time.strftime("%d %m %Y %T")
+  %br
+  %br
 
 - if can? :update, @event
   = link_to 'Edit', edit_event_path(@event)
