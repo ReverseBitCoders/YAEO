@@ -48,3 +48,6 @@ input#event_name, textarea#event_description{
 div.ui-datepicker,div.ui-timepicker {
  font-size:13px;
 }
+.event_main_info_box{
+    padding-left: 20px;
+}
