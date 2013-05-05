@@ -1,5 +1,5 @@
 - if user_signed_in?
-  = link_to 'Add your own event', new_event_path
+  = link_to t(:add_new_event), new_event_path
 - @events.each do |event|
   .event_list_div
     .event_info_box
