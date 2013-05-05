@@ -12,17 +12,17 @@
   = csrf_meta_tags
   %head
     %title
-      = 'Yet another event organizer'
+      = t(:yaeo_title)
   %body
     %p.notice
       = notice
     %p.alert
       = alert
     .top_header
-      = render :partial => 'events/top_header'
+      = render :partial => events_top_header_path
     .left_pane
-      = render :partial => 'events/left_pane'
+      = render :partial => events_left_pane_path
     .center_pane
       = yield
     .right_pane
-      = render :partial => 'events/right_pane'
+      = render :partial => events_right_pane_path
