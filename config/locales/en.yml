@@ -4,3 +4,5 @@
 en:
   yaeo_title: 'Yet another event organizer'
   add_new_event: 'Add your own event'
+  facebook_share:  'share on facebook'
+  twitter_share: 'tweet this event'
