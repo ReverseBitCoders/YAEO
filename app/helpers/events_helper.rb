@@ -5,7 +5,7 @@ module EventsHelper
   end
 
   def events_left_pane_path
-    'events/top_header'
+    'events/left_pane'
   end
 
   def events_right_pane_path
