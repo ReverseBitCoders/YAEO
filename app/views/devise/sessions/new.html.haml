@@ -4,14 +4,14 @@
   = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
     %table
       %tr
-        %td
+        %td{:style => "padding: 10px;"}
           = f.label :email
-        %td
+        %td{:style => "padding: 10px;"}
           = f.email_field :email, :autofocus => true
       %tr
-        %td
+        %td{:style => "padding: 10px;"}
           = f.label :password
-        %td
+        %td{:style => "padding: 10px;"}
           = f.password_field :password
     %br
     - if devise_mapping.rememberable?
