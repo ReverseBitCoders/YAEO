@@ -1,21 +1,24 @@
-%h2 Sign up
-= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
-  = devise_error_messages!
-  %table
-    %tr
-      %td
-        = f.label :email
-      %td
-        = f.email_field :email, :autofocus => true
-    %tr
-      %td
-        = f.label :password
-      %td
-        = f.password_field :password
-    %tr
-      %td
-        = f.label :password_confirmation
-      %td
-        = f.password_field :password_confirmation
-  %div= f.submit "Sign up"
-= render "devise/shared/links"
+.sign_up_form{:style => "margin: 20px;"}
+  %h2 Sign up
+  %br
+  = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+    = devise_error_messages!
+    %table
+      %tr
+        %td{:style => "padding: 10px;"}
+          = f.label :email
+        %td{:style => "padding: 10px;"}
+          = f.email_field :email, :autofocus => true
+      %tr
+        %td{:style => "padding: 10px;"}
+          = f.label :password
+        %td{:style => "padding: 10px;"}
+          = f.password_field :password
+      %tr
+        %td{:style => "padding: 10px;"}
+          = f.label :password_confirmation
+        %td{:style => "padding: 10px;"}
+          = f.password_field :password_confirmation
+    %div= f.submit "Sign up"
+  %br
+  = render "devise/shared/links"
