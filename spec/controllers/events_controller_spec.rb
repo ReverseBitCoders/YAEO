@@ -7,5 +7,10 @@ describe EventsController do
       expect(response).to be_success
       expect(response.status).to eq(200)
     end
+    it 'assigns @events on GET #index' do
+      events = Event.all
+      get :index
+      assigns(:events).should eq(events)
+    end
   end
 end
