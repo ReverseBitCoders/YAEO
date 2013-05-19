@@ -30,14 +30,21 @@ gem 'dm-observer',     DM_VERSION
 group :assets do
   gem 'uglifier',     '~> 1.2.4'
   gem 'haml-rails'
+  gem 'rspec-rails', '~> 2.0'
 end
 
 gem 'jquery-rails', '~> 2.0.1'
+
 group :development do
   gem 'debugger'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'factory_girl_rails'
 end
+
 group :test do
   gem 'turn', '~> 0.9.4', :require => false
+  gem 'rspec-rails', '~> 2.0'
+  gem 'factory_girl_rails'
 end
 
 # for devise
