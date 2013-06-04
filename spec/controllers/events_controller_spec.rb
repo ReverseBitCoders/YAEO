@@ -13,7 +13,7 @@ describe EventsController do
       assigns(:events).should eq(events)
     end
     it 'should render the index page on hitting index action' do
-    get :index
+      get :index
       response.should render_template('index')
     end
   end
