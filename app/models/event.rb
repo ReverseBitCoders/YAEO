@@ -15,6 +15,7 @@ class Event
   # every event has a user associated with itself
   belongs_to :user
 
+  # using virtual attributes for date time fields
   def build_date_time
     self.date_time = "#{date} #{time}".to_datetime
   end
