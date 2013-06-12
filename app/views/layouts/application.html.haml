@@ -1,16 +1,9 @@
 !!!
-= stylesheet_link_tag :top_header
-= stylesheet_link_tag :left_pane
-= stylesheet_link_tag :right_pane
-= stylesheet_link_tag :events
-= stylesheet_link_tag :normalize
-= stylesheet_link_tag "application", :media => "all"
-= stylesheet_link_tag "jquery-ui"
-= javascript_include_tag "application"
-= javascript_include_tag "jquery-ui-timepicker"
 %html
   = csrf_meta_tags
   %head
+    = stylesheet_link_tag :normalize, :jquery_ui, :application, :top_header, :left_pane, :right_pane, :events
+    = javascript_include_tag :jquery, :jquery_ui, :jquery_ui_timepicker, :application
     %title
       = t(:yaeo_title)
   %body
