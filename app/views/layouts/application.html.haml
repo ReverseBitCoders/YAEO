@@ -4,18 +4,18 @@
   %head
     = stylesheet_link_tag :normalize, :jquery_ui, :application, :top_header, :left_pane, :right_pane, :events
     = javascript_include_tag :jquery, :jquery_ui, :jquery_ui_effect_slide, :jquery_ui_timepicker, :application
-    %title
-      = t(:yaeo_title)
+  %title
+    = t(:yaeo_title)
   %body
     %p.notice
       = notice
     %p.alert
       = alert
     .top_header
-      = render :partial => events_top_header_path
+      = render :partial => events_top_header_path, :layout => false
     .left_pane
-      = render :partial => events_left_pane_path
+      = render :partial => events_left_pane_path, :layout => false
     .center_pane
       = yield
     .right_pane
-      = render :partial => events_right_pane_path
+      = render :partial => events_right_pane_path, :layout => false

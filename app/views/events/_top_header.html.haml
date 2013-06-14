@@ -1,5 +1,5 @@
 .top_header_1
-  = render :partial => 'events/user_session_view'
+  = render :partial => 'events/user_session_view', :layout => false
   %h2
     = link_to 'Yet another event organizer !', events_path, :id => 'top_header_heading'
 .top_header_2
