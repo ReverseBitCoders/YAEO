@@ -6,7 +6,7 @@ h2, p{
   min-width: 60%;
   border: 3px solid  #EDEDED;
   border-radius: 3px;
-  height: 100%;
+  height: auto;
 }
 .event_list_div{
   padding: 20px;
